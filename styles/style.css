@@ -4,3 +4,54 @@
     padding: 0;
     box-sizing: border-box;
 }
+.main{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    min-height: 100vh;
+}
+video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.header {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    background: transparent;
+    position: relative;
+    z-index: 2;
+    a{
+        background: transparent;
+        color: white;
+    }
+}
+.section_home{
+    margin-top: 40svh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    position: relative;
+    z-index: 2;
+    h1{
+        color: red;
+        background: transparent;
+    }
+}
+.boton_inicial {
+    width: 10svw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:white;
+}
