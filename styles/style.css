@@ -55,3 +55,41 @@ video{
     align-items: center;
     background:white;
 }
+
+/*****************FORMULARIO PERSONAJES****************+*/
+.section_personajes {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../assets/img/best-background-for-every-class-main_1.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.article_form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    input{
+        width: 50%;
+    }
+}
+.form {
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    button{
+        width: 50%;
+    }
+}
+.div_num{
+    display: flex;
+    input{
+        width: 15%;
+    }
+}

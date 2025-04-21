@@ -10,17 +10,36 @@
 <body>
     <main class="main">
         <header class="header">
-            <a href="#">See all</a>
+            <a href="#">Ver</a>
         </header>
         <section class="section_home">
             <h1>Dungeons & Dragons</h1>
-            <button class="boton_inicial">Get started</button>
+            <a href="#personajes"class="boton_inicial">Iniciar</a>
         </section>
         <video muted autoplay loop >
             <source src="assets/img/background.mp4"
             type="video/mp4">
         </video>
     </main>
-    sect
+        <section id="personajes" class="section_personajes">
+            <article class="article_form">
+                <form action="?" class="form">
+                    <h1>Nuevo personaje</h1>
+                    <input type="text" class="name" placeholder="Nombre">
+                    <input type="text" class="raza" placeholder="Raza">
+                    <input type="text" class="clase" placeholder="Clase">
+                    <input type="text" class="genero" placeholder="Género">
+                    <input type="text" class="armadura" placeholder="Armadura">
+                    <div class="div_num">
+                        <span>Fuerza</span><input type="number" class="fuerza" max="20" min="0">
+                        <span>Destreza</span><input type="number" class="destreza" max="20" min="0">
+                        <span>Inteligencia</span><input type="number" class="inteligencia" max="20" min="0">
+                    </div>
+                    <input type="text" class="habilidades" placeholder="Habilidades especiales">
+                    <input type="text" class="accesorios" placeholder="Accesorios">
+                    <button>Guardar</button>
+                </form>
+            </article>  
+    </section>
 </body>
 </html>
