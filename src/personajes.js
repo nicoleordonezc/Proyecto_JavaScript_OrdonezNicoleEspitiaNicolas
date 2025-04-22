@@ -1,8 +1,7 @@
-import {url} from "./main.js"
-
 export const raza = async()=> {
-    url.pathname += "races"
-    const race =  await fetch(url.toString(), {method: "get"})
+    const nuevo = new URL("https://www.dnd5eapi.co/api/2014/");
+    nuevo.pathname += "races"
+    const race =  await fetch(nuevo.toString(), {method: "get"})
     return await race.json();
     
 }
