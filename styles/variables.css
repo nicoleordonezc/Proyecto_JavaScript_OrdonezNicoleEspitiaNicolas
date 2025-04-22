@@ -2,3 +2,7 @@
     --color-1: #FFFFFF;
 }
 
+@font-face {
+    font-family: "DragonHunter";
+    src: url(../assets/font/dragon-hunter-font/DragonHunter-9Ynxj.otf);
+}

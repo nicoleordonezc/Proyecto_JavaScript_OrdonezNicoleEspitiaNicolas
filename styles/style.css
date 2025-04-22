@@ -5,13 +5,31 @@
     box-sizing: border-box;
 }
 .main{
-    padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     position: relative;
     min-height: 100vh;
+}
+.div_title {
+    display: flex;
+    gap: 180px;
+    h1{
+        font-family: "DragonHunter";
+        font-size: 7rem;
+        color: var(--color-1);
+        background: transparent;
+    }
+}
+.div_link {
+    display: flex;
+    gap: 100px;
+    z-index: 2;
+    a{  
+        text-decoration: none;
+        color: azure;
+    }
 }
 video{
     position: absolute;
@@ -21,31 +39,21 @@ video{
     height: 100%;
     object-fit: cover;
 }
-.header {
-    display: flex;
-    width: 100%;
-    justify-content: end;
-    background: transparent;
-    position: relative;
-    z-index: 2;
-    a{
-        background: transparent;
-        color: white;
-    }
-}
 .section_home{
-    margin-top: 40svh;
+    margin-top: 24%;
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    justify-content: center;
+    /* gap: 20px;    */
+    justify-content: space-around;
     align-items: center;
     background: transparent;
     position: relative;
     z-index: 2;
-    h1{
-        color: red;
-        background: transparent;
+    img{
+        width: 50svw;
+        height: auto;
+        position: absolute;
+        z-index: 2;
     }
 }
 .boton_inicial {
@@ -53,7 +61,6 @@ video{
     display: flex;
     justify-content: center;
     align-items: center;
-    background:white;
 }
 
 /*****************FORMULARIO PERSONAJES****************+*/
