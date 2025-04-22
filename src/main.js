@@ -1,4 +1,8 @@
+import { guardar } from "./guardar.js";
 import { raza, clase, armadura, habilidades } from "./personajes.js"
+
+guardar()
+
 
 document.addEventListener('DOMContentLoaded', async () => {
     try {
@@ -55,3 +59,4 @@ document.addEventListener('DOMContentLoaded', async ()=> {
         console.error("Error cargando clases:", error)
     }
 });
+

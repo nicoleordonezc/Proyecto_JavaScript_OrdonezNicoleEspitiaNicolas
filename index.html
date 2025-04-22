@@ -25,19 +25,25 @@
             <article class="article_form">
                 <form action="?" class="form" id="form">
                     <h1>Nuevo personaje</h1>
-                    <input type="text" class="name" placeholder="Nombre">
-                    <span>Raza</span><select class="raza"></select>
-                    <span>Clase</span><select class="clase"></select>
-                    <input type="text" class="genero" placeholder="Género">
-                    <span>Armadura</span><select class="armadura"></select>
+                    <input type="text" class="name" placeholder="Nombre" name="name">
+                    <span>Raza</span><select class="raza" name="raza"></select>
+                    <span>Clase</span><select class="clase" name="clase"></select>
+                    <label for="genero">Género</label>
+                    <select id="genero" class="genero" name="genero">
+                    <option value="">Selecciona un género</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="femenino">Femenino</option>
+                    <option value="otro">Otro</option>
+                    </select>
+                    <span>Armadura</span><select class="armadura" name="armas"></select>
                     <div class="div_num">
-                        <span>Fuerza</span><input type="number" class="fuerza" max="20" min="0">
-                        <span>Destreza</span><input type="number" class="destreza" max="20" min="0">
-                        <span>Inteligencia</span><input type="number" class="inteligencia" max="20" min="0">
+                        <span>Fuerza</span><input type="number" class="fuerza" max="20" min="0" name="fuerza">
+                        <span>Destreza</span><input type="number" class="destreza" max="20" min="0"name="des">
+                        <span>Inteligencia</span><input type="number" class="inteligencia" max="20" min="0"name="inte">
                     </div>
-                    <span>Habilidades</span><select class="habilidades"></select>
-                    <input type="text" class="accesorios" placeholder="Accesorios">
-                    <button>Guardar</button>
+                    <span>Habilidades</span><select class="habilidades" name="habi"></select>
+                    <input type="text" class="accesorios" placeholder="Accesorios" name="acce">
+                    <button class="button" id="button" type="submit">Guardar</button>
                 </form>
             </article>  
     </section>
