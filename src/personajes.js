@@ -14,13 +14,21 @@ export const clase = async()=>{
     
 }
 
-export const armadura = async()=>{
+export const arma = async()=>{
     const nuevo = new URL("https://www.dnd5eapi.co/api/2014/");
     nuevo.pathname += "equipment-categories/weapon"
     const armas = await fetch(nuevo.toString(), {method: "get"})
     return await armas.json();
     
 }
+
+export const armadura = async()=>{
+    const nuevo = new URL ("https://www.dnd5eapi.co/api/2014/");
+    nuevo.pathname += "equipment-categories/armor"
+    const armadura = await fetch(nuevo.toString(), {method: "get"})
+    return await armadura.json()
+}
+
 
 export const habilidades = async()=>{
     const nuevo = new URL("https://www.dnd5eapi.co/api/2014/");

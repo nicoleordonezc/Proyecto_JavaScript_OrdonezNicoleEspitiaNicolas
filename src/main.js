@@ -1,5 +1,5 @@
 import { guardar } from "./guardar.js";
-import { raza, clase, armadura, habilidades } from "./personajes.js"
+import { raza, clase, arma, armadura, habilidades } from "./personajes.js"
 
 guardar()
 
@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         select.appendChild(option);
       });
     } catch (error) {
-      console.error("Error cargando razas:", error);
+      console.error("Loading...", error);
     }
   });
 
@@ -28,21 +28,35 @@ document.addEventListener('DOMContentLoaded', async ()=> {
             select.appendChild(option)
         });
     }catch (error){
-        console.error("Error cargando clases:", error)
+        console.error("Loading...", error)
     }
 });
 
 document.addEventListener('DOMContentLoaded', async ()=>{
     try{
-        const armaduraData = await armadura();
-        const select = document.querySelector('.armadura');
-        armaduraData.equipment.forEach(a=>{
+        const armaData = await arma();
+        const select = document.querySelector('.armas');
+        armaData.equipment.forEach(w=>{
         const option = document.createElement('option')
-        option.textContent = a.name;
+        option.textContent = w.name;
         select.appendChild(option)
         });
     }catch(error){
-        console.error("Error cargando armadura:", error)
+        console.error("Loading...", error)
+    }
+});
+
+document.addEventListener('DOMContentLoaded', async()=>{
+    try{
+        const armaduraData = await armadura();
+        const select = document.querySelector('.armadura');
+        armaduraData.equipment.forEach(a => {
+        const option = document.createElement('option')
+        option.textContent = a.name
+        select.appendChild(option) 
+        })
+    }catch(error){
+        console.error("Loading...",error)
     }
 });
 
@@ -56,7 +70,7 @@ document.addEventListener('DOMContentLoaded', async ()=> {
             select.appendChild(option)
         });
     }catch (error){
-        console.error("Error cargando clases:", error)
+        console.error("Loading...", error)
     }
 });
 
