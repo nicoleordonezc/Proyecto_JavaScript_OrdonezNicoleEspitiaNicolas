@@ -1,5 +1,5 @@
 import { guardar } from "./guardar.js";
-import { raza, clase, arma, armadura, habilidades } from "./personajes.js"
+import { raza, clase, arma, armadura, habilidades, accesorios } from "./personajes.js"
 
 guardar()
 
@@ -74,3 +74,16 @@ document.addEventListener('DOMContentLoaded', async ()=> {
     }
 });
 
+document.addEventListener('DOMContentLoaded', async()=>{
+    try{
+        const accesorioData = await accesorios();
+        const select = document.querySelector('.accesorios');
+        accesorioData.equipment.forEach(a => {
+        const option = document.createElement('option');
+        option.textContent = a.name;
+        select.appendChild(option)
+        });
+    }catch (error){
+        console.error("Loading...", error)
+    }
+})

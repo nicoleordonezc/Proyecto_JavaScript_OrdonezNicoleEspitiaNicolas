@@ -37,3 +37,10 @@ export const habilidades = async()=>{
     return await hEspeciales.json();
     
 }
+
+export const accesorios = async()=>{
+    const nuevo = new URL ("https://www.dnd5eapi.co/api/2014/");
+    nuevo.pathname += "equipment-categories/adventuring-gear"
+    const acces = await fetch(nuevo.toString(), {method:"get"})
+    return await acces.json()
+}
