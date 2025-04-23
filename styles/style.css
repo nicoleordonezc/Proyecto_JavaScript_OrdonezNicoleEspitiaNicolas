@@ -14,11 +14,12 @@
     background-color: aqua;
 }
 .div_title {
-    display: flex;
-    gap: 180px;
+    position: relative;
+    z-index: 2;
+    padding: 20px;
     h1{
         font-family: "DragonHunter";
-        font-size: 7rem;
+        font-size: 6rem;
         color: var(--color-1);
         background: transparent;
     }
@@ -68,7 +69,7 @@ video{
     position: relative;
     z-index: 2;
     img{
-        width: 50svw;
+        width: 68%;
         height: auto;
         position: absolute;
         z-index: 2;
