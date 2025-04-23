@@ -44,3 +44,33 @@ export const accesorios = async()=>{
     const acces = await fetch(nuevo.toString(), {method:"get"})
     return await acces.json()
 }
+
+
+const imagenRaza = {
+    dragonborn: "../assets/img/dragonborn.png",
+    dwarf: "../assets/img/dwarft.png",
+    elf: "../assets/img/elf.png",
+    gnome: "../assets/img/gnome.png",
+    "half-elf": "../assets/img/halfElf.png",
+    "half-orc": "../assets/img/half-orc.png",
+    halfling: "../assets/img/halfling.png",
+    human: "../assets/img/human.png",
+    tiefling: "../assets/img/tiefling.png",
+};
+
+export function actualizarImagenRaza() {
+    const select = document.getElementById("raza");
+    const imagen = document.getElementById("image-upload");
+  
+    const razaSeleccionada = select.value;
+    const ruta = imagenRaza[razaSeleccionada];
+  
+    if (ruta) {
+      imagen.src = ruta;
+      imagen.alt = razaSeleccionada; 
+    } else {
+      imagen.src = "../assets/img/best-background-for-every-class-main_1.jpg";
+      imagen.alt = "Sin imagen";
+    }
+  }
+  
