@@ -3,10 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create
-    </title>
+    <title>Create</title>
+    <link rel="stylesheet" href="../styles/create.css">
+    <script src="../src/main.js" type="module" defer></script>
 </head>
 <body>
-    
+        <section id="personajes" 
+        class="section_personajes">
+        <div class="div_top">
+            <a href="../index.html">Atras</a>
+            <a href="../views/characters.html">Personajes</a>
+        </div>
+            <article class="article_form">
+                <form action="?" class="form" id="form">
+                    <img src="../assets/img/Daco_5094741.png" alt="D&D">
+                    <input type="text" class="name" placeholder="Nombre" name="name">
+                    <span>Race</span><select class="raza" name="raza"></select>
+                    <span>Class</span><select class="clase" name="clase"></select>
+                    <label for="genero">Género</label>
+                    <select id="genero" class="genero" name="genero">
+                    <option value="">Select a gender</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="femenino">Femenino</option>
+                    <option value="otro">Other</option>
+                    </select>
+                    <span>Weapons</span><select class="armas" name="armas"></select>
+                    <span>Armor</span><select class="armadura" name="armadura"></select>
+                    <div class="div_num">
+                        <span>Fuerza</span><input type="number" class="fuerza" max="20" min="0" name="fuerza">
+                        <span>Destreza</span><input type="number" class="destreza" max="20" min="0"name="des">
+                        <span>Inteligencia</span><input type="number" class="inteligencia" max="20" min="0"name="inte">
+                    </div>
+                    <span>Habilidades</span><select class="habilidades" name="habi"></select>
+                    <span>accesorios</span><select class="accesorios" name="accesorios"></select>
+                    <button class="button" id="button" type="submit">Guardar</button>
+                </form>
+            </article>
+            <video muted autoplay loop class="video">
+                <source src="../assets/img/BG PJ.mp4"
+                type="video/mp4">
+            </video>
+    </section>
 </body>
 </html>

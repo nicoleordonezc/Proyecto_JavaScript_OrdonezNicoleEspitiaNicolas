@@ -1,8 +1,14 @@
 :root{
     --color-1: #FFFFFF;
+    --color-2: #76a38e;
+    --color-3: #83300cb7;
 }
 
 @font-face {
     font-family: "DragonHunter";
     src: url(../assets/font/dragon-hunter-font/DragonHunter-9Ynxj.otf);
+}
+@font-face {
+    font-family: "Sugo-Pro-Display";
+    src: url(../assets/font/sugo_pro_display/Sugo-Pro-Display-Light-trial.ttf);
 }

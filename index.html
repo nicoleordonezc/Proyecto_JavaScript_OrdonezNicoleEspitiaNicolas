@@ -17,41 +17,14 @@
             </div>
             <img src="./assets/img/mujer.png">
             <div class="div_link">
-                <a href="#personajes"class="boton_inicial">Get started</a>
-                <a href="#">See more</a>
+                <a href="./views/create.html">Get started</a>
+                <a href="#" target="_blank">See more</a>
             </div>
         </section>
-        <video muted autoplay loop >
+        <video muted autoplay loop class="video_one">
             <source src="assets/img/BG 1.mp4"
             type="video/mp4">
         </video>
     </main>
-        <section id="personajes" class="section_personajes">
-            <article class="article_form">
-                <form action="?" class="form" id="form">
-                    <h1>New character</h1>
-                    <input type="text" class="name" placeholder="Nombre" name="name">
-                    <span>Race</span><select class="raza" name="raza"></select>
-                    <span>Class</span><select class="clase" name="clase"></select>
-                    <label for="genero">Género</label>
-                    <select id="genero" class="genero" name="genero">
-                    <option value="">Select a gender</option>
-                    <option value="masculino">Masculino</option>
-                    <option value="femenino">Femenino</option>
-                    <option value="otro">Other</option>
-                    </select>
-                    <span>Weapons</span><select class="armas" name="armas"></select>
-                    <span>Armor</span><select class="armadura" name="armadura"></select>
-                    <div class="div_num">
-                        <span>Fuerza</span><input type="number" class="fuerza" max="20" min="0" name="fuerza">
-                        <span>Destreza</span><input type="number" class="destreza" max="20" min="0"name="des">
-                        <span>Inteligencia</span><input type="number" class="inteligencia" max="20" min="0"name="inte">
-                    </div>
-                    <span>Habilidades</span><select class="habilidades" name="habi"></select>
-                    <span>accesorios</span><select class="accesorios" name="accesorios"></select>
-                    <button class="button" id="button" type="submit">Guardar</button>
-                </form>
-            </article>  
-    </section>
 </body>
 </html>

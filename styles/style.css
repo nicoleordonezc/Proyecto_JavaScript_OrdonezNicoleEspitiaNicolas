@@ -24,12 +24,29 @@
 }
 .div_link {
     display: flex;
-    gap: 100px;
+    gap: 50svw;
     z-index: 2;
+    padding-top: 40px;
     a{  
+        font-family: "Sugo-Pro-Display";
+        font-size: 20px;
         text-decoration: none;
-        color: azure;
+        color: var(--color-1);
+        width: 200px;
+        height: 50px;
+        background-color: transparent;
+        backdrop-filter: blur(10px);
+        outline: 1px solid var(--color-1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50px;
     }
+}
+.div_link a:hover{
+    color: var(--color-1);
+    background-color: var(--color-2);
+    outline: none;
 }
 video{
     position: absolute;
@@ -40,7 +57,7 @@ video{
     object-fit: cover;
 }
 .section_home{
-    margin-top: 24%;
+    margin-top: 21%;
     display: flex;
     flex-direction: column;
     /* gap: 20px;    */
@@ -61,42 +78,4 @@ video{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-/*****************FORMULARIO PERSONAJES****************+*/
-.section_personajes {
-    width: 100%;
-    height: 100vh;
-    background-image: url(../assets/img/best-background-for-every-class-main_1.jpg);
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-
-}
-.article_form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    input{
-        width: 50%;
-    }
-}
-.form {
-    background-color: aquamarine;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-    button{
-        width: 50%;
-    }
-}
-.div_num{
-    display: flex;
-    input{
-        width: 15%;
-    }
 }
