@@ -1,7 +1,7 @@
 import { guardar } from "./guardar.js";
 import { raza, clase, arma, armadura, habilidades, accesorios } from "./personajes.js"
 
-guardar()
+guardar();
 
 
 document.addEventListener('DOMContentLoaded', async () => {

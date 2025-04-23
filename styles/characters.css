@@ -1,0 +1,27 @@
+
+@import url(variables.css);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    padding: 20px;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.section_cards {
+    display: flex;
+    flex-direction: row;
+    gap: 10px; 
+}
+.caja{
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+}
