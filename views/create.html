@@ -11,36 +11,74 @@
         <section id="personajes" 
         class="section_personajes">
         <div class="div_top">
-            <a href="../index.html">Atras</a>
-            <a href="../views/characters.html">Personajes</a>
+            <a href="../index.html" class="nav-button" home-btn >Atras</a>
+            <a href="../views/characters.html" class="nav-button" gallery-btn>Personajes</a>
         </div>
-            <article class="article_form">
-                <form action="?" class="form" id="form">
+            <article class="container">
+                <div class="logo">
                     <img src="../assets/img/Daco_5094741.png" alt="D&D">
-                    <input type="text" class="name" placeholder="Nombre" name="name">
-                    <span>Race</span><select class="raza" name="raza"></select>
-                    <span>Class</span><select class="clase" name="clase"></select>
-                    <label for="genero">Género</label>
-                    <select id="genero" class="genero" name="genero">
-                    <option value="">Select a gender</option>
-                    <option value="masculino">Masculino</option>
-                    <option value="femenino">Femenino</option>
-                    <option value="otro">Other</option>
-                    </select>
-                    <span>Weapons</span><select class="armas" name="armas"></select>
-                    <span>Armor</span><select class="armadura" name="armadura"></select>
-                    <div class="div_num">
-                        <span>Fuerza</span><input type="number" class="fuerza" max="20" min="0" name="fuerza">
-                        <span>Destreza</span><input type="number" class="destreza" max="20" min="0"name="destreza">
-                        <span>Inteligencia</span><input type="number" class="inteligencia" max="20" min="0"name="inteligencia">
+                </div>
+                <form action="?" class="form" id="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Name" name="name">
                     </div>
-                    <span>Habilidades</span><select class="habilidades" name="habilidades"></select>
-                    <span>accesorios</span><select class="accesorios" name="accesorios"></select>
-                    <button class="button" id="button" type="submit">Guardar</button>
+                    <div class="row">
+                        <div class="col">
+                            <span>Race</span><select class="form-control" id="raza" name="raza"></select>
+
+                        </div>
+                        <div class="col">
+
+                            <span>Class</span><select class="form-control" id="clase" name="clase"></select>
+                        </div>
+                        <div class="col">
+                            <span>Gender</span>
+                            <select id="genero" class="form-control" name="genero">
+                            <option value="">Select a gender</option>
+                            <option value="masculino">Male</option>
+                            <option value="femenino">Female</option>
+                            <option value="otro">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div  class="image-upload">
+                        <img src="#" alt="raza">
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <span>Weapons</span><select class="form-control" id="armas" name="armas"></select>
+                        </div>
+                        <div class="col">
+                            <span>Armor</span><select class="form-control" id="armadura" name="armadura"></select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <span>Fuerza</span><input type="number" class="form-control" max="20" min="0" name="fuerza">
+
+                        </div>
+                        <div class="col">
+                            <span>Destreza</span><input type="number" class="form-control" max="20" min="0"name="destreza">
+
+                        </div>
+                        <div class="col">
+                            <span>Inteligencia</span><input type="number" class="form-control" max="20" min="0"name="inteligencia">
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <span>Habilidades</span><select class="form-control" id="habilidades" name="habilidades"></select>
+                        </div>
+                        <div class="col">
+                            <span>accesorios</span><select class="form-control" id="accesorios" name="accesorios"></select>
+                        </div>
+                    </div>
+                    <button class="submit-btn" id="button" type="submit">Save</button>
                 </form>
             </article>
             <video muted autoplay loop class="video">
-                <source src="../assets/img/BG PJ.mp4"
+                <source src="../assets/img/background.mp4"
                 type="video/mp4">
             </video>
     </section>
