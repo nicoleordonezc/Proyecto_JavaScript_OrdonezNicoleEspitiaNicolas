@@ -11,6 +11,7 @@
     align-items: center;
     position: relative;
     min-height: 100vh;
+    background-color: aqua;
 }
 .div_title {
     display: flex;

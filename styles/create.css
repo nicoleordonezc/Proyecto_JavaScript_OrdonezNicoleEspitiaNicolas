@@ -66,3 +66,109 @@ video{
         width: 15%;
     }
 }
+/********************FORMULARIO CSS ***********************/
+
+
+.nav-button {
+    position: absolute;
+    background-color: rgba(80, 20, 10, 0.9);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.nav-button:hover {
+    background-color: rgba(120, 30, 15, 0.9);
+}
+
+.home-btn {
+    top: 20px;
+    left: 20px;
+}
+
+.gallery-btn {
+    top: 20px;
+    right: 20px;
+}
+
+.container {
+    width: 650px;
+    background-color: rgba(150, 50, 20, 0.85);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.logo img {
+    height: 80px;
+    filter: brightness(0) invert(1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px;
+    border-radius: 25px;
+    border: none;
+    background-color: rgba(80, 20, 10, 0.9);
+    color: white;
+    outline: none;
+    font-size: 16px;
+}
+
+.form-control::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.col {
+    flex: 1;
+}
+
+.image-upload {
+    height: 180px;
+    background-color: rgba(80, 20, 10, 0.9);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.submit-btn {
+    background-color: rgba(80, 20, 10, 0.9);
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    display: block;
+    margin: 20px auto 0;
+    transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: rgba(120, 30, 15, 0.9);
+}
