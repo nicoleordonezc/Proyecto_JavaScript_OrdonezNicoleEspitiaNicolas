@@ -6,13 +6,11 @@
     box-sizing: border-box;
 }
 body{
-    /* background-image: url('../assets/img/blurBack.png');
-    background-size: cover;
-    background-position: center;
-    min-height: 100vh; */
     padding: 20px;
 }
-
+header{
+    
+}
 /***top bar****/
 .nav-button {
     position: absolute;
@@ -30,6 +28,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    z-index: 2;
 }
 
 .nav-button:hover {
@@ -53,6 +53,8 @@ video{
     max-width: 400px;
     margin: 0 auto;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 2;
 }
 
 .input-field {
@@ -61,11 +63,14 @@ video{
     border: none;
     border-radius: 30px;
     padding: 12px 20px;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
     width: 100%;
     font-size: 16px;
     text-align: center;
     font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .row {
