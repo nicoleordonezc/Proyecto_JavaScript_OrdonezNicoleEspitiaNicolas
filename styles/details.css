@@ -5,12 +5,12 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    padding: 20px;
-}
-header{
-    
-}
+
+body {
+padding: 10px;
+  }
+  
+
 /***top bar****/
 .nav-button {
     position: absolute;
@@ -48,14 +48,16 @@ video{
 .character-card {
     background-color: var(--color-10);
     border-radius: 25px;
-    padding: 20px;
+    padding: 10px;
     width: 100%;
     max-width: 400px;
+    height: 620px;
     margin: 0 auto;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
     position: relative;
     z-index: 2;
 }
+
 
 .input-field {
     background-color: var(--color-9);
@@ -98,6 +100,16 @@ video{
 }
 
 /* Make the row with 3 columns */
+.linea{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 5px;
+    font-family: 'Arial', sans-serif;
+    color: var(--color-8);
+}
+
 .row-3 {
     display: flex;
     gap: 10px;
@@ -118,15 +130,17 @@ video{
 .col-2 {
     flex: 1;
 }
+
+
 @media (max-width: 480px) {
-    .nav-button {
+    /* .nav-button {
         font-size: 20px;
         padding: 8px 12px;
         margin-bottom: 60px;
     }
     .character-card {
         padding: 15px;
-    }
+    } */
     
     .input-field {
         padding: 10px;
@@ -150,15 +164,17 @@ video{
         top: 15px;
         left: 15px;
     }
-}
-
-@media (max-width: 360px) {
-    .input-field {
-        padding: 8px;
-        font-size: 12px;
-    }
+    .character-card {
+      height: 580px;
+      margin-top: 10px;
+      }
     
-    .character-image {
-        height: 150px;
-    }
+      .nav-button {
+        font-size: 14px;
+        padding: 0.4rem 0.8rem;
+      }
+    
+      .linea {
+        font-size: 14px;
+      }
 }

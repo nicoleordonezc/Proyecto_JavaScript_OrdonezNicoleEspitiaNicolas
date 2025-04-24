@@ -9,13 +9,31 @@ document.addEventListener("DOMContentLoaded", () => {
     const contenedor = document.getElementById("detalle");
 
 
-            // Create and add the name
+            // Agrega nombre
             const nombre = document.createElement("h1");
             nombre.textContent = tarjetaGuardada.name;
             nombre.classList.add("input-field");
             contenedor.appendChild(nombre);
             
-            // Create first row (race, class, gender)
+            // primera fila
+            const lineaUno = document.createElement("div");
+            lineaUno.classList.add("linea");
+
+            const caja1 = document.createElement("p");
+            caja1.textContent = "Race"
+
+            const caja2 = document.createElement("p");
+            caja2.textContent = "Class"
+
+            const caja3 = document.createElement("p");
+            caja3.textContent = "Gender"
+
+            lineaUno.appendChild(caja1);
+            lineaUno.appendChild(caja2);
+            lineaUno.appendChild(caja3);
+
+            contenedor.appendChild(lineaUno);
+
             const firstDiv = document.createElement("div");
             firstDiv.classList.add("row-3");
 
@@ -31,15 +49,15 @@ document.addEventListener("DOMContentLoaded", () => {
             genero.textContent = tarjetaGuardada.genero;
             genero.classList.add("input-field", "col-3");
             
-            // Add elements to the first row
+            
             firstDiv.appendChild(raza);
             firstDiv.appendChild(clase);
             firstDiv.appendChild(genero);
             
-            // Add first row to container
+    
             contenedor.appendChild(firstDiv);
             
-            // Create and add the image container
+            // Agrega imagen
             const imagenContainer = document.createElement("div");
             imagenContainer.classList.add("character-image");
             
@@ -50,7 +68,21 @@ document.addEventListener("DOMContentLoaded", () => {
             imagenContainer.appendChild(imagen);
             contenedor.appendChild(imagenContainer);
             
-            // Create second row (weapon, armor)
+            // Segunda fila
+            const lineaTres = document.createElement("div");
+            lineaTres.classList.add("linea");
+
+            const caja4 = document.createElement("p");
+            caja4.textContent = "Weapon"
+
+            const caja5 = document.createElement("p");
+            caja5.textContent = "Armor"
+
+            lineaTres.appendChild(caja4);
+            lineaTres.appendChild(caja5);
+
+            contenedor.appendChild(lineaTres);
+
             const secondDiv = document.createElement("div");
             secondDiv.classList.add("row-2");
             
@@ -66,7 +98,27 @@ document.addEventListener("DOMContentLoaded", () => {
             secondDiv.appendChild(armor);
             contenedor.appendChild(secondDiv);
             
-            // Create third row (strength, skill, intelligence)
+            // Tercera fila
+            
+            const lineaDos = document.createElement("div");
+            lineaDos.classList.add("linea");
+
+            const caja6 = document.createElement("p");
+            caja6.textContent = "Strength"
+
+            const caja7 = document.createElement("p");
+            caja7.textContent = "Skill"
+
+            const caja8 = document.createElement("p");
+            caja8.textContent = "Intelligence"
+
+            lineaDos.appendChild(caja6);
+            lineaDos.appendChild(caja7);
+            lineaDos.appendChild(caja8);
+
+            contenedor.appendChild(lineaDos);
+
+
             const thirdDiv = document.createElement("div");
             thirdDiv.classList.add("row-3");
             
@@ -87,7 +139,21 @@ document.addEventListener("DOMContentLoaded", () => {
             thirdDiv.appendChild(intelligence);
             contenedor.appendChild(thirdDiv);
             
-            // Create fourth row (SH, accessories)
+            // Cuarta fila
+            const lineaCuatro = document.createElement("div");
+            lineaCuatro.classList.add("linea");
+
+            const caja9 = document.createElement("p");
+            caja9.textContent = "Special hability"
+
+            const caja10 = document.createElement("p");
+            caja10.textContent = "Accessories"
+
+            lineaCuatro.appendChild(caja9);
+            lineaCuatro.appendChild(caja10);
+
+            contenedor.appendChild(lineaCuatro);
+
             const fourthDiv = document.createElement("div");
             fourthDiv.classList.add("row-2");
             
