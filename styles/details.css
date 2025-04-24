@@ -119,6 +119,11 @@ video{
     flex: 1;
 }
 @media (max-width: 480px) {
+    .nav-button {
+        font-size: 20px;
+        padding: 8px 12px;
+        margin-bottom: 60px;
+    }
     .character-card {
         padding: 15px;
     }
