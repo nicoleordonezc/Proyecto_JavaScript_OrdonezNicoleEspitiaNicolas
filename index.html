@@ -3,11 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main</title>
+    <title>Home</title>
     <link rel="stylesheet" href="styles/style.css">
     <script src="src/main.js" type="module" defer></script>
 </head>
 <body>
-    
+    <main class="main">
+        <div class="div_title">
+            <h1>Dungeons & Dragons</h1>
+        </div>
+        <section class="section_home">
+            <div class="div_link">
+                <a href="./views/create.html">Get started</a>
+                <a href="./views/characters.html">See more</a>
+            </div>
+            <div class="instructions">
+                <p>DnD is an imaginative storytelling game where anything can happen. You decide what kind of hero you want to be: challenge rampaging monsters, plan a heist, kidnap a noble, or save the world! </p>
+            </div>
+            <div class="dragon-container">
+                <img src="./assets/img/dragon.png" class="dragon-image">
+            </div>
+        </section>
+        <video muted autoplay loop class="video_one">
+            <source src="assets/img/fondo.mp4"
+            type="video/mp4">
+        </video>
+    </main>
 </body>
 </html>

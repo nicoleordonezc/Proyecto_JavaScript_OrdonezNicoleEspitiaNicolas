@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create</title>
+    <link rel="stylesheet" href="../styles/create.css">
+    <script src="../src/main.js" type="module" defer></script>
+</head>
+<body>
+        <section id="personajes" 
+        class="section_personajes">
+        <div class="div_top">
+            <a href="../index.html" class="nav-button" home-btn >Home</a>
+            <a href="../views/characters.html" class="nav-button" gallery-btn>Characters</a>
+        </div>
+            <article class="container">
+                <div class="logo">
+                    <img src="../assets/img/Daco_5094741.png" alt="D&D">
+                </div>
+                <form action="?" class="form" id="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Name" name="name">
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <span>Race</span><select class="form-control" id="raza" name="raza"><option value="">Select a race</option></select>
+
+                        </div>
+                        <div class="col">
+                            <span>Class</span><select class="form-control" id="clase" name="clase"><option value="">Select a class</option></select>
+                        </div>
+                        <div class="col">
+                            <span>Gender</span>
+                            <select id="genero" class="form-control" name="genero">
+                            <option value="">Select a gender</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div  class="image-upload" >
+                        <img id="image-upload" src="../assets/img/best-background-for-every-class-main_1.jpg" alt="raza">
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <span>Weapons</span><select class="form-control" id="armas" name="armas"><option value="">Select a weapon</option></select>
+                        </div>
+                        <div class="col">
+                            <span>Armor</span><select class="form-control" id="armadura" name="armadura"><option value="">Select an armor</option></select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <span>Strength</span><input type="number" class="form-control" max="20" min="0" name="fuerza" placeholder="8">
+
+                        </div>
+                        <div class="col">
+                            <span>Skill</span><input type="number" class="form-control" max="20" min="0"name="destreza" placeholder="8">
+
+                        </div>
+                        <div class="col">
+                            <span>Inteligence</span><input type="number" class="form-control" max="20" min="0"name="inteligencia" placeholder="8">
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <span>Special hability</span><select class="form-control" id="habilidades" name="habilidades"><option value="">Select</option></select>
+                        </div>
+                        <div class="col">
+                            <span>Accessories</span><select class="form-control" id="accesorios" name="accesorios"><option value="">Select</option></select>
+                        </div>
+                    </div>
+                    <button class="submit-btn" id="button" type="submit">Save</button>
+                    
+                </article>
+            </form>
+            <video muted autoplay loop class="video">
+                <source src="../assets/img/background.mp4"
+                type="video/mp4">
+            </video>
+    </section>
+</body>
+</html>
