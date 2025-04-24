@@ -97,7 +97,7 @@ video{
 }
 
 .logo img {
-    height: 60px;
+    height: 80px;
     max-width: 80%;
     filter: brightness(0) invert(1);
 }
@@ -111,7 +111,7 @@ video{
     padding: 12px;
     border-radius: 25px;
     border: none;
-    background-color: rgba(80, 20, 10, 0.9);
+    background-color: var(--color-7);
     color: var(--color-1);
     outline: none;
     font-size: 16px;
@@ -147,8 +147,8 @@ video{
 
 .image-upload {
     height: 300px;
-    background-color: rgba(80, 20, 10, 0.9);
-    border-radius: 10px;
+    background-color:var(--color-7);
+    border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -158,12 +158,12 @@ video{
     img{
         width: 95%;
         height: 90%;
-        border-radius: 10px;
+        border-radius: 20px;
     }
 }
 
 .submit-btn {
-    background-color: rgba(80, 20, 10, 0.9);
+    background-color: var(--color-7);
     color: var(--color-1);
     border: none;
     padding: 12px 30px;
@@ -178,7 +178,7 @@ video{
 }
 
 .submit-btn:hover {
-    background-color: rgba(120, 30, 15, 0.9);
+    background-color: var(--color-5);
 }
 
 @media (max-width: 768px) {

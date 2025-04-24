@@ -12,21 +12,27 @@ function card(){
         const nombre = document.createElement("h1");
         nombre.textContent = tarjeta.name;
         nombre.classList.add ("character-header")
+
+        const imagen = document.createElement("img");
+        imagen.src = tarjeta.imagen;
+        imagen.classList.add("character-image")
     
         const raza = document.createElement("span");
         raza.textContent = "Race " +tarjeta.raza;
+        raza.classList.add("character-description")
         
         const clase = document.createElement("span");
         clase.textContent = "Class "+tarjeta.clase;
+        clase.classList.add("character-description")
         
         const boton = document.createElement("a");
         boton.href = "../index.html"
         boton.textContent = "See more"
         boton.classList.add("details-button")
-        boton.classList.add("details-button:hover")
 
         const eliminarBtn = document.createElement("button");
         eliminarBtn.textContent = "Delete";
+        eliminarBtn.classList.add("details-button")
 
         eliminarBtn.addEventListener("click", () => {
             tarjetas = tarjetas.filter(t => t.name !== tarjeta.name);
@@ -37,7 +43,7 @@ function card(){
     
           });
 
-        div.append(nombre, raza, clase, boton, eliminarBtn)
+        div.append(nombre, imagen, raza, clase, boton, eliminarBtn)
         contenedor.appendChild(div);
     });
       }
