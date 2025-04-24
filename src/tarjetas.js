@@ -26,9 +26,15 @@ function card(){
         clase.classList.add("character-description")
         
         const boton = document.createElement("a");
-        boton.href = "../index.html"
+        boton.href = "details.html"
         boton.textContent = "See more"
         boton.classList.add("details-button")
+        
+        // Evento para ver más
+        boton.addEventListener("click", () => {
+          localStorage.setItem("tarjetaSeleccionada", JSON.stringify(tarjeta));
+        });
+        
 
         const eliminarBtn = document.createElement("button");
         eliminarBtn.textContent = "Delete";
